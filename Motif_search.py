@@ -12,7 +12,7 @@
 # 5. Execute the script
 
 filelist= [
-'Dradiodurans.gb', 'penebacillus.gbff', 'ecoli.gbff'
+'D_radiodurans.gb', 'Paenibacillus_sp.gbff', 'E_coli.gbff'
 ###paste file list here separated by "xxx","xxxx"
 ###ideally in one line
 ]
