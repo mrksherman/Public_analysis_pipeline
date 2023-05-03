@@ -8,14 +8,14 @@ The tryptophanase (<i>tna</i> operon of E. coli and other bacteria controls the 
 <img width="400" height="400" src="./Images/Gong2002.png">
 </p>
 
-Figure 1: The <i>tnaC</i> mechanism from Gong and Yanofsky, 2002.
+<b>Figure 1</b>: The <i>tnaC</i> mechanism from Gong and Yanofsky, 2002.
 
 #### Assay design
 The objective of this study was to sort members of a variant library for their ability to stall the ribosome using a reporter assay in the presence/absence of tryptophan. A plasmid library of over 3,250 bioinformatically-identified variants was derived by searching over 10,000 bacterial genomes using the motif search algorithm. Genscript prepared a plasmid library to incorporate the variants across a 60mer stretch of nucleotides within the <i>tnaC</i> gene.  This regulatory sequence was placed upstream of GFP to induce fluorescence upon ribosome stalling. All of the variants were designed to begin with MNIL (encoded by ATGAATATCCTG) followed by 57 variable nucleotides and a stop codon (TGA or TAA).  
  
 ![plot](./Images/tnaC_schematic.jpeg)
 
-Figure 2: Modifications made to the <i>tna</i> operon for the assessment of the variant library. Sherman et al. 2021
+<b>Figure 2</b>: Modifications made to the <i>tna</i> operon for the assessment of the variant library. Sherman et al. 2021
 
 The library was cloned into E. coli and those transformed with the library were selected for on LB + kanamycin. The transformed pool was grown to OD~0.7 in LB, starved for tryptophan via a 1:10 dilution into casamino acid media, and then fed tryptophan.  The difference in reporter fluorescence was determined by a cell sorter to enrich members that allowed ribosome stalling. Following grow out, plasmids were isolated from the culture and an NGS library was prepared by amplification from the constant regions on the plasmids.  These were then multiplexed and run on an an Illumina MiSeq.
 
@@ -34,7 +34,7 @@ This script aims to observe how the distribution of membership changes from the 
 | lib_2 | Split with GTACC 24 aas (could incorporate regular expressions to anchor) | 51218 | 860 (25% 'M') |
 | lib_3 | Was already split at MNIL (20 aas) | 29804 |29804| 29767|
 
-Table 1: Library file descriptions
+<b>Table 1</b>: Library file descriptions
 
 Seuqencing data was found to be much more highly variable than the input library of 3,250 sequences, I took two approaches to explore enrichment.   
 
@@ -48,7 +48,7 @@ The first approach used peptide frequencies under the assumption that any mutati
 <img width="400" height="400" src="./Images/cluster_view.png">
 </p>
 
-Figure 3: UMAP representation of lib_3 protein sequences demonstrate clustering around a nuclear point with most reads
+<b>Figure 3</b>: UMAP representation of lib_3 protein sequences demonstrate clustering around a nuclear point with most reads
 
 Results from specific libraries using the first approach suggested that data may be clustered around original library members and may have incorporated mutations as artifacts during the library prep process. Even points just one amino acid away from the major variant of the cluster is almost 0 when it comes to frequency, suggesting that this effect may be an artifact. To account for this potential effect, variants are mapped back to their closest original library member via Levenshtein distance. The freqencies were then calculated and normalized and encoded for graphing as above.
 
@@ -61,7 +61,7 @@ Results from specific libraries using the first approach suggested that data may
 |Blosum Matrix| Substitution matrix that assigns scores to each possible amino acid substitution based on the frequency of occurrence of the substitution in known protein sequences | X|X|
 |Phylogenetic analysis| Compares multiple amino acid sequences via construction of a phylogenetic tree and measures branch lengths ||
 
-Table 2: Models for measuring distance between peptides
+<b>Table 2</b>: Models for measuring distance between peptides
 
 Note: Some analyses may have the values corrected by the frequency of the original library to provide a measure of enrichment.  This value is calcuated by the following example formula: Norm_freq1_corr=ref_123_df['Norm_freq1']-ref_123_df['Norm_freq'],
 
@@ -79,4 +79,4 @@ While the server is running, the user can use the lasso tool to select points of
 
 ![plot](./Images/app_view.png)
 
-Figure 4: A view of the web app used to extract features of interset.  In this analysis, a portion of the cluster to the right was selected.
+<b>Figure 4</b>: A view of the web app used to extract features of interset.  In this analysis, a portion of the cluster to the right was selected.
