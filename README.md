@@ -1,4 +1,4 @@
-This is a demonstration repository to highlight some scripts that I generated during my Ph.D. at the Univeresity of Texas, involved with several publications, including:
+This is a demonstration repository to highlight scripts generated as a student during my Ph.D. at the University of Texas at Austin.  It will include scripts generated from the following publications:
 * Sherman, M. W., Sandeep, S., & Contreras, L. M. (2021). The tryptophan-induced tnaC ribosome stalling sequence exposes high amino acid cross-talk that can Be mitigated by removal of NusB for higher orthogonality. ACS Synthetic Biology, 10(5), 1024-1038.
 * Sherman, M. W., Chen, A., Chu, C., Gonzalez, N., Patel, T., & Contreras, L. M. (2019). Discovery and characterization of native Deinococcus radiodurans promoters for tunable gene expression. Applied and Environmental Microbiology, 85(21), e01356-19.
 * Sherman, M. W., Gonzalez-Rivera, J. C., Wang, D. S., Chuvalo-Abraham, J. C., Hildebrandt Ruiz, L., & Contreras, L. M. (2020). RNA oxidation in chromatin modification and DNA-damage response following exposure to formaldehyde. Scientific Reports, 10(1), 1-16.

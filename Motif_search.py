@@ -4,6 +4,8 @@
 # around the hit (amino acid and nucleotide), stop codon, the proportion of Gs in the downstream 70 basepairs (for rut 
 # identification), and sends everything to an output file. 
 
+# This script uses Biopython 1.81 (https://biopython.org/) to parse Genbank sequences
+
 # To run the script:
 # 1. Download a bacterial genome from ncbi in genbank format (full) one by one or in bulk
 # 2. Generate a list of the file locations in quotes and separated by commas
