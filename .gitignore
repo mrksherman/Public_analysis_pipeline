@@ -9,4 +9,5 @@ motif_hits1.csv
 Paenibacillus_sp.gbff
 test.ipynb
 trash.py
-
+.DS_Store
+.gitignore
