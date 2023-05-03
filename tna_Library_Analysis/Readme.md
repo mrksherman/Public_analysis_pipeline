@@ -43,6 +43,7 @@ The first approach used peptide frequencies under the assumption that any mutati
 #### Approach 2: Nucleotide abundance of original library members
 
 <p align="center">
+<img align="left" width="100" height="100" src="./Images/cluster_view.png">
 ![plot](./Images/cluster_view.png | width=300 | height = 300)
 </p>
 
