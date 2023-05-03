@@ -27,7 +27,7 @@ hover = HoverTool(tooltips=[
 color_mapper = linear_cmap(field_name=library, palette=Reds[8][6::-1], low=0, high=1)
 
 # Create a scatter plot of the embeddings with the points colored by frequency
-plot = figure(tools=['pan,wheel_zoom,box_zoom,reset',hover],title='UMAP Embeddings of Protein Sequences')
+plot = figure(tools=['pan,wheel_zoom,box_zoom,reset',hover],title='UMAP Embeddings of Nucleotide Sequences')
 plot.scatter(x='x', y='y', source=source, color=color_mapper)
 plot.add_tools(LassoSelectTool())
 

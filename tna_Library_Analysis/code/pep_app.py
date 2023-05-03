@@ -52,8 +52,6 @@ plot.add_layout(color_bar, 'right')
 columns = [TableColumn(field=col, title=col) for col in ref_123_df.columns[3:8]]
 table = DataTable(source=source, columns=columns, width=400, height=400)
 
-
-
 # create a button to save the selected points as a CSV file
 button = Button(label="Save CSV", button_type="success")
 
@@ -64,6 +62,7 @@ def save_csv():
         selected_data = {col: source.data[col][selected_indices] for col in source.column_names}
         selected_df = pd.DataFrame(selected_data)
         selected_df.to_csv("selected_pep_points.csv", index=False)
+
 def changeLabel(button):
     if button.label == 'Save CSV':
         button.label = 'CSV Saved!'
@@ -72,8 +71,6 @@ def changeLabel(button):
 
 button.on_click(save_csv)
 button.on_click(lambda : changeLabel(button))
-
-
 
 # define a callback function for the selection change event
 def selection_change_callback(attrname, old, new):
@@ -90,7 +87,6 @@ selected_table = DataTable(source=selected_source, columns=columns, width=600, h
 
 # add a selection change callback to the data source
 source.selected.on_change('indices', selection_change_callback)
-
 
 # combine the plot, tables, and button into a layout
 layout = column(row(plot, selected_table), button)
