@@ -4,7 +4,7 @@
 
 The tryptophanase (<i>tna</i> operon of E. coli and other bacteria controls the influx and breakdown of externally-available tryptophan. In the absence of tryptophan, rho associates with the transcript near the stop codon of <i>tnaC</i> and stops transcription before the polymerase reaches the downstream gene. However, in the presence of high concentrations of externally-available tryptophan, the ribosome stalls at the stop codon of <i>tnaC</i> and occludes rho from associating with the transcript, allowing expression of the downstream genes.
 
-![plot](./Images/Gong2002.png | width=300 | height = 300)
+<img align="center" width="400" height="400" src="./Images/Gong2002.png">
 
 Figure 1: The <i>tnaC</i> mechanism from Gong and Yanofsky, 2002.
 
@@ -42,10 +42,7 @@ The first approach used peptide frequencies under the assumption that any mutati
 
 #### Approach 2: Nucleotide abundance of original library members
 
-<p align="center">
-<img align="left" width="100" height="100" src="./Images/cluster_view.png">
-![plot](./Images/cluster_view.png | width=300 | height = 300)
-</p>
+<img align="center" width="400" height="400" src="./Images/cluster_view.png">
 
 Figure 3: UMAP representation of lib_3 protein sequences demonstrate clustering around a nuclear point with most reads
 
