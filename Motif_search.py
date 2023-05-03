@@ -8,7 +8,7 @@
 # 1. Download a bacterial genome from ncbi in genbank format (full) one by one or in bulk
 # 2. Generate a list of the file locations in quotes and separated by commas
 # 3. Put the file locations into the filelist variable
-# 4. Adjust the regular expression within the script to the anticipated motif
+# 4. Adjust the regular expression to the anticipated motif
 # 5. Execute the script
 
 filelist= [
@@ -16,6 +16,8 @@ filelist= [
 ###paste file list here separated by "xxx","xxxx"
 ###ideally in one line
 ]
+
+pattern=r"...........[W,Y,F]...........P']"
 
 import Bio, re, os
 from Bio import Entrez, SeqIO, GenBank
@@ -77,7 +79,8 @@ def motifnextparse(accession): #Define motifnetparse to access the files from nc
                     if str("translation") in feature.qualifiers: #looking at the translation section of the file
                         trans = str(feature.qualifiers['translation'])
                         translation = str(feature.qualifiers['translation'][0])
-                        for motif in re.finditer(r"...........[W,Y,F]...........P']",trans): #in the amino acid sequence, look for a P    
+                        #for motif in re.finditer(r"...........[W,Y,F]...........P']",trans): #in the amino acid sequence, look for a P   
+                        for motif in re.finditer(pattern,trans): #in the amino acid sequence, look for a P        
                             mg =motif.group().strip("']") #mg stands for motif group
                             if "gene" in feature.qualifiers: #if the word 'gene' is present
                                 gene= str(feature.qualifiers['gene'][0]) #the gene is what is on the line
@@ -133,7 +136,7 @@ def motifnextparse(accession): #Define motifnetparse to access the files from nc
                     if str("translation") in feature.qualifiers:
                         trans = str(feature.qualifiers['translation'])#if the string 'translation' is seen, then name it appropriatly.
                         translation = str(feature.qualifiers['translation'][0])#if the string 'translation' is seen, then name it appropriatly.
-                        for motif in re.finditer(r"...........[W,Y,F]...........P']",trans): 
+                        for motif in re.finditer(pattern,trans): 
                             mg =motif.group().strip("']")
                             if "gene" in feature.qualifiers:
                                 gene= str(feature.qualifiers['gene'][0])
