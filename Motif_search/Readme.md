@@ -3,7 +3,7 @@
 This script takes in a regular expression (https://www.rexegg.com/regex-quickstart.html) to search for sequences within bacterial genomes. The script can be altered to search genomes one by one via NCBI; however, in practice it was more useful to bulk download genomes for bulk analysis. THe purpose of this script was to scan >10,000 thousand genomes for potential ribosome arrest peptides.  The sequences could then facilitate generation of a bioinformatically-informed library for screening against small molecule inducers to select affected sequences, analagous to tryptophan in the tna operon leader peptide.
 
 <p align="center">
-<img width="600" height="600" src="./Images/Wang2020.png">
+<img width="800" height="600" src="./Images/Wang2020.png">
 </p>
 <b>Figure 1:</b> Demonstration of the effect of tryptophan on tna operon expression. Schematic from Wang et al. 2020.
 
