@@ -17,11 +17,11 @@ This pipeline investigates the difference between sequencing data from DMS-MaP-S
 The result of the pipeline is a Streamlit web app that can be used to communicate findings to experimentalists about structural inference as well as selection of the compound used in experiments. Example screenshots of the web application are below:
 
 <p align="center">
-<img width="550" height="350" src="./Images/TableView.png">
-<img width="550" height="350" src="./Images/Base_Analysis.png">
-<img width="550" height="350" src="./Images/NormDist.png">
-<img width="550" height="350" src="./Images/Hairpin.png">
-<img width="550" height="350" src="./Images/ROC.png">
+<img width="500" height="350" src="./Images/TableView.png">
+<img width="500" height="350" src="./Images/Base_Analysis.png">
+<img width="500" height="350" src="./Images/NormDist.png">
+<img width="500" height="350" src="./Images/ROC.png">
+<img width="500" height="350" src="./Images/Hairpin.png">
 </p>
 
 
