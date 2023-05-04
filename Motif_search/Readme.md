@@ -6,10 +6,10 @@ This script takes in a regular expression (https://www.rexegg.com/regex-quicksta
 <img width="800" height="400" src="./Images/Wang2020.png">
 </p>
 <b>Figure 1:</b> Demonstration of the effect of tryptophan on tna operon expression. Schematic from Wang et al. 2020.
-
+<br>
 
 The query takes in a regular expression (for example "...........[W,Y,F]...........P") and searches the protein annotations within the bacterial genome for matches.  Once a match is found, it collects contectual information from different regions such as:
-
+<br>
 
 | tnaC Region | Rut | Linker | Downstream Gene|
 |:-:|:-:|:-:|:-:|
@@ -23,10 +23,13 @@ The query takes in a regular expression (for example "...........[W,Y,F]........
 |P-site codon||||
 |Stop codon||||
 
+<br>
+
 <p align="center">
 <img src="./Images/MotifQuery.png">
 </p>
 <b>Figure 2:</b> Construction of the motif search algorithm
+<br>
 
 The output returns a csv for downstream use, such as library generation.
 <p align="center">
