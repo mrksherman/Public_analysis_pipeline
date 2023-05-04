@@ -17,11 +17,11 @@ This pipeline investigates the difference between sequencing data from DMS-MaP-S
 The result of the pipeline is a Streamlit web app that can be used to communicate findings to experimentalists about structural inference as well as selection of the compound used in experiments. Example screenshots of the web application are below:
 
 <p align="center">
-<img width="400" height="400" src="./Images/TableView.png">
-<img width="400" height="400" src="./Images/Base_Analysis.png">
-<img width="400" height="400" src="./Images/NormDist.png">
-<img width="400" height="400" src="./Images/ROC.png">
-<img width="400" height="400" src="./Images/Hairpin.png">
+<img width="600" height="400" src="./Images/TableView.png">
+<img width="600" height="400" src="./Images/Base_Analysis.png">
+<img width="600" height="400" src="./Images/NormDist.png">
+<img width="600" height="400" src="./Images/Hairpin.png">
+<img width="500" height="400" src="./Images/ROC.png">
 </p>
 
 
@@ -36,7 +36,7 @@ The result of the pipeline is a Streamlit web app that can be used to communicat
 |||E. coli 16S Dot-bracket notation| https://rnacentral.org/rna/URS000039D89A/511145|
 |||E. coli 23S Dot-bracket notation| https://rnacentral.org/rna/URS00019ABAEF/511145|
 
-# Installation instructions
+# Installation Notes
 In addition to the standard packages used in this script (pandas, numpy, biopython, seaborn), several others will need to be installed.  Bash commands were run in the command line and python commands were run in an ipython notebook.
 
 #### RNAFramework
