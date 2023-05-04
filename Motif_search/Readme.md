@@ -10,6 +10,7 @@ This script takes in a regular expression (https://www.rexegg.com/regex-quicksta
 
 The query takes in a regular expression (for example "...........[W,Y,F]...........P") and searches the protein annotations within the bacterial genome for matches.  Once a match is found, it collects contectual information from different regions such as:
 
+<p align="center">
 | tnaC Region | Rut | Linker | Downstream Gene|
 |:-:|:-:|:-:|:-:|
 |Strand| Downstream 54nt | Linker length | cis-oriented downstream gene(s)|
@@ -22,8 +23,6 @@ The query takes in a regular expression (for example "...........[W,Y,F]........
 |P-site codon||||
 |Stop codon||||
 
-
-<p align="center">
 <img src="./Images/MotifQuery.png">
 </p>
 <b>Figure 2:</b> Construction of the motif search algorithm
